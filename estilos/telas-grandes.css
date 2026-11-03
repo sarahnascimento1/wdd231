@@ -1,0 +1,81 @@
+@media only screen and (min-width: 61.25rem) {
+
+
+    header,
+    nav,
+    footer {
+        max-width: 1000px;
+        margin: 0 auto;
+
+    }
+
+
+    .hamburguer {
+        display: none;
+    }
+
+
+    header span {
+        font-size: 2rem;
+
+    }
+
+    nav {
+        padding: 1rem;
+        border: 1px solid #f26b7a;
+        border-top: none;
+        border-radius: 0 0 10px 10px;
+        background-color: #f26b7a;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav a {
+        display: inline;
+        border-bottom: none;
+        border-right: 1px solid #f0f2dc;
+        padding: 0.3rem 1rem;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    section p {
+        padding: 2rem;
+    }
+
+    .foto img {
+        margin-top: 4.6rem;
+    }
+
+    .filtros {
+        flex-wrap: nowrap;
+        margin: 0 0 1rem;
+    }
+
+    button {
+        padding: 1rem;
+        margin: 2rem 1rem 1rem;
+        font-size: 1.1rem;
+        width: auto;
+        flex: 1;
+    }
+
+    #lista-cursos {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .icone {
+        width: 60px;
+        margin: 0 1rem 3.5rem 1rem;
+    }
+
+}

@@ -3,9 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atividade Semana 01</title>
+    <meta name="description" content="WDD 231: Desenvolvimento Frontend para Web I">
+    <meta name="author" content="Sarah Nascimento">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    
+
+    <script src="scripts/curso.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/navegacao.js" defer></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
 <body>
-    <h1>Sarah Nascimento</h1>
+    <header>
+        <img src="imagens/icone.svg" alt="icone" width="512" height="512">
+       <span class="titulo">Sarah Nascimento</span>
+       <button id="ham-btn" class="hamburguer"></button>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="index.html">Página Inicial</a>
+            <a href="#">Projeto da Câmara</a>
+            <a href="#">Projeto Final</a>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Página Inicial</h1>
+
+        <section class="sobre">
+            <h2>Sobre Mim</h2>
+            <p>Meu nome é Sarah, sou estudante de Desenvolvimento Web e atualmente estou em processo de
+                transição de carreira para a
+                área de tecnologia.<br><br> No momento, atuo na área administrativa, onde desenvolvi habilidades
+                importantes como organização,
+                comunicação e trabalho em equipe. Tenho gosto por tecnologia e design.<br><br>Sou de São Paulo (capital). Lorem
+                ipsum dolor, sit amet consectetur adipisicing elit. Magnam quam nisi nesciunt! Quos ratione eligendi voluptas a
+                cumque? Dolorum, possimus. Nemo quisquam blanditiis id dolor in, enim impedit, voluptate necessitatibus
+                reprehenderit consequatur velit! Qui ad nemo, libero perferendis omnis dignissimos tenetur neque reprehenderit?
+                Perferendis blanditiis, reprehenderit odio quia fugiat iure sint ea aspernatur labore in iusto officiis dolore enim
+                neque dolores, tempora. sit amet consectetur adipisicing elit. Magnam quam nisi nesciunt! Quos ratione eligendi
+                voluptas a cumque? Dolorum,
+                possimus. Nemo quisquam blanditiis id dolor in, enim impedit, voluptate necessitatibus reprehenderit</p>
+        </section>
+
+        <section class="foto">
+            <h2>Foto</h2>
+            <img src="imagens/my-photo.jpg" alt="">
+        </section>
+
+        <section class="cursos">
+            <h2>Cursos de Certificação Web</h2>
+            <ul class="filtros">
+                <button data-filtro="todos">Todos</button>
+                <button data-filtro="CSE">CSE</button>
+                <button data-filtro="WDD">WDD</button>
+            </ul>
+            <ul id="lista-cursos"></ul>
+            <p id="total-creditos"></p>
+        </section>
+        
+    </main>
+    <footer>
+        <ul class="icones">
+            <a href="https://github.com/sarahnascimento1"> 
+                <img class="icone" src="imagens/github.svg" alt="icone github">
+            </a>
+            <a href="https://www.linkedin.com/in/sarah-n-533898158/">
+                <img class="icone" src="imagens/linkedin.svg" alt="icone linkedin">
+            </a>
+            <a href="https://x.com/?lang=pt">
+                <img class="icone" src="imagens/twitter.svg" alt="icone do X">
+            </a>
+        </ul>
+
+        <div class="rodape">
+            <p>© <span id="anoAtual"></span> | Sarah Nascimento | São Paulo</p>
+            <p>Última modificação:<span id="ultimaModificacao"></span></p>
+        </div>
+        
+    </footer>
 </body>
 </html>
