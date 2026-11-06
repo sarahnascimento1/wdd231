@@ -26,28 +26,29 @@
         border: 1px solid #f26b7a;
         border-radius: 0 0 10px 10px;
         background-color: #f26b7a;
-        
-        
+
+
     }
 
-    nav ul, nav ul.show {
+    nav ul,
+    nav ul.show {
         display: flex;
         flex-direction: row;
         justify-content: center;
         padding: 0;
-    
+
     }
 
     nav a {
-        
+
         border: 3px solid #09a6a3;
         background-color: #8ac7de;
         box-shadow: 0 4px 0 #09a6a3;
         border-radius: 999px;
         padding: 0.5rem 1.2rem;
         margin-left: 1rem;
-        
-        
+
+
     }
 
     main {
@@ -68,8 +69,8 @@
     .filtros {
         flex-wrap: nowrap;
         margin: 0 0 1rem;
-       
-        
+
+
     }
 
     .filtros li {
