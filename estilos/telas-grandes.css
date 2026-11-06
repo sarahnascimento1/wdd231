@@ -3,6 +3,7 @@
 
     header,
     nav,
+    main,
     footer {
         max-width: 1000px;
         margin: 0 auto;
@@ -23,20 +24,30 @@
     nav {
         padding: 1rem;
         border: 1px solid #f26b7a;
-        border-top: none;
         border-radius: 0 0 10px 10px;
         background-color: #f26b7a;
+        
+        
     }
 
-    nav ul {
-        display: block;
+    nav ul, nav ul.show {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+    
     }
 
     nav a {
-        display: inline;
-        border-bottom: none;
-        border-right: 1px solid #f0f2dc;
-        padding: 0.3rem 1rem;
+        
+        border: 3px solid #09a6a3;
+        background-color: #8ac7de;
+        box-shadow: 0 4px 0 #09a6a3;
+        border-radius: 999px;
+        padding: 0.5rem 1.2rem;
+        margin-left: 1rem;
+        
+        
     }
 
     main {
@@ -57,14 +68,18 @@
     .filtros {
         flex-wrap: nowrap;
         margin: 0 0 1rem;
+       
+        
     }
 
-    button {
-        padding: 1rem;
+    .filtros li {
         margin: 2rem 1rem 1rem;
+    }
+
+    .filtros button {
+        padding: 1rem;
         font-size: 1.1rem;
-        width: auto;
-        flex: 1;
+        width: 100%;
     }
 
     #lista-cursos {
