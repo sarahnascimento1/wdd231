@@ -1,0 +1,183 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        
+    }
+
+    body {
+        font-family: "Raleway", sans-serif;
+    }
+
+
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #002930;
+        background-color: #002930;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+        padding-right: 4rem;
+        
+    }
+
+    nav a {
+        text-decoration: none;
+        border: 1px solid #f8f0af;
+        padding: 1rem;
+        border-radius: 90px;
+        background-color: #ac4a00;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    nav a:hover {
+        background-color: #bda01f;
+    }
+
+
+    header img {
+        width: 170px;
+        height: auto;
+        
+
+    }
+
+    .marca {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem 0 1rem 1rem;
+        color: #f8f0af;
+        
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+        font-weight: 600;
+        
+
+    }
+
+    .nome, .projeto {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding-bottom: 1rem;
+        font-weight: 600;
+    
+    }
+
+    #cartoes {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        margin: 2rem;
+        max-width: 1000px;
+        margin: 3rem auto;
+        
+
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        column-gap: 1rem;
+        align-content: start;
+        background-color: #f8f0af;
+        border: 2px solid #ac4a00;
+        border-radius: 0;
+        padding: 1rem;
+        font-size: 0.8rem;
+        font-family: "Roboto", sans-serif;
+        
+
+    }
+
+
+    section h2 {
+        grid-column: 1 / -1;
+        text-align: center;
+        font-size: 1.1rem;
+        padding-bottom: 0.75rem;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #ac4a00;
+    }
+
+
+    section img {
+    
+        width: 90px;
+        height: auto;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+       
+    }
+
+    dl {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 0.75rem;
+        row-gap: 0.4rem;
+        align-items: start;
+    }
+
+    dt {
+        font-weight: 700;
+        text-align: right;
+    }
+
+    dd {
+        text-align: left;
+        overflow-wrap: anywhere;
+    }
+
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        padding: 2rem;
+        border-top: 2px solid #002930;
+        background-color: #002930;
+        color: #fff;
+
+    }
+
+    .contato {
+        text-align: left;
+
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .icones {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        list-style: none;
+    }
+
+    .icone {
+        width: 45px;
+        height: 45px;
+        color: white;
+    }
+
+    .aviso {
+        grid-column: 1 / -1;
+        padding-top: 3rem;  
+    }
+
+    

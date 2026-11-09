@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Diretório da Câmara de Comércio</title>
+    <meta name="description"
+        content="WDD 231: Desenvolvimento Frontend para Web I - Página do Diretório da Câmara de Comércio">
+    <meta name="author" content="Sarah Nascimento">
+    <meta property="og:title" content="Página do Diretório da Câmara de Comércio">
+    <meta property="og:description"
+        content="Página do Diretório da Câmara de Comércio é um projeto do curso WDD231 projeto realizado em grupo">
+    <meta property="og:image" content="https://sarahnascimento1.github.io/wdd231/camara/imagens/icone.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://sarahnascimento1.github.io/wdd231/camara/diretorio.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/camara.js" defer></script>
+
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="marca">
+            <img src="imagens/icone-2.png" alt="icone">
+            <div class="nome">
+                <span class="titulo">WC</span> 
+                <span class="subtitulo">Work Câmara de Comércio</span>
+            </div>
+            
+        </div>
+        
+        <button id="ham-btn" class="hamburguer"></button>
+
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Diretório</a></li>
+                <li><a href="#">Associar-se</a></li>
+                <li><a href="#">Descobrir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <div id="cartoes"></div>
+    </main>
+    <footer>
+
+        <div class="contato">
+            <span class="nome">WC - Work Câmara de Comércio</span>
+            <p>Av. New Paulist, 1001<br>info@wccomercio.org<br>(11) 1234-5678</p>
+        </div>
+        
+        <div class="redes">
+            <ul class="icones">
+                <li>
+                    <a href="https://www.youtube.com/">
+                        <img class="icone" src="imagens/youtube.svg" alt="icone youtube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/?lang=pt">
+                        <img class="icone" src="imagens/twitter-x.svg" alt="icone twitter-x">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/">
+                        <img class="icone" src="imagens/linkedin.svg" alt="icone do Linkedin">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="data">
+            <span class="projeto">Projeto de Aula WDD231</span>
+            <p> Sarah Nascimento<br> ©<span id="anoAtual"></span> | WC Câmara de Comércio | São Paulo</p>
+            <p>Última modificação:<span id="ultimaModificacao"></span></p>
+        </div>
+        
+        
+        <p class="aviso">Aviso importante:
+
+            Este site é um projeto acadêmico desenvolvido para fins educacionais e demonstrativos. A Câmara de Comércio
+            apresentada
+            é fictícia, assim como os níveis de associação atribuídos às empresas.
+
+            As empresas mencionadas são organizações reais, utilizadas exclusivamente como exemplos de representação do
+            setor
+            empresarial da Zona Oeste de São Paulo. Não existe vínculo institucional, parceria comercial ou associação
+            formal entre
+            essas empresas e o projeto.
+
+            Suas marcas e identidades visuais pertencem aos respectivos titulares.</p>
+
+    </footer>
+</body>
+
+</html>

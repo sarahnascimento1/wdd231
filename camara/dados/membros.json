@@ -1,0 +1,74 @@
+{
+    "empresas": [
+        {
+            "nome": "Chili Peppers Foods",
+            "endereco": "Rua Frederico Wolf, 200 - Vila Leopoldina, São Paulo - SP",
+            "telefone": "(11) 2305-9409",
+            "url": "https://chilipeppers.com.br/",
+            "imagem": "imagens/chili-food.png",
+            "nivel": 2,
+            "segmento": "Indústria alimentícia",
+            "descricao": "Indústria de alimentos especializada em molhos, recheios e coberturas."
+        },
+        {
+            "nome": "Oxilapa",
+            "endereco": "Rua Carneiro da Silva, 332 - Vila Leopoldina, São Paulo - SP",
+            "telefone": "(11) 3832-8452",
+            "url": "https://oxilapa.com.br/",
+            "imagem": "imagens/oxilapa.png",
+            "nivel": 2,
+            "segmento": "Equipamentos industriais",
+            "descricao": "Comércio de gases, equipamentos e produtos para soldagem."
+        },
+        {
+            "nome": "Casa Toni",
+            "endereco": "Rua Artur de Azevedo, 996 - Pinheiros, São Paulo - SP",
+            "telefone": "(11) 3083-3212",
+            "url": "https://www.casatoni.com.br/",
+            "imagem": "imagens/casa-toni.png",
+            "nivel": 3,
+            "segmento": "Materiais de construção",
+            "descricao": "Comércio de tintas, ferramentas, materiais de construção e utilidades."
+        },
+        {
+            "nome": "Talho",
+            "endereco": "Avenida Diógenes Ribeiro de Lima, 2314 - Alto de Pinheiros, São Paulo - SP",
+            "telefone": "(11) 3021-0250",
+            "url": "https://www.talho.com.br/",
+            "imagem": "imagens/talho.png",
+            "nivel": 2,
+            "segmento": "Comércio alimentício",
+            "descricao": "Comércio especializado em carnes e alimentos."
+        },
+        {
+            "nome": "Suprinform",
+            "endereco": "Rua Schilling, 314 - Vila Leopoldina, São Paulo - SP",
+            "telefone": "(11) 3168-6777",
+            "url": "https://www.suprinform.com.br/",
+            "imagem": "imagens/suprinform.png",
+            "nivel": 1,
+            "segmento": "Papelaria e informática",
+            "descricao": "Comércio de materiais de escritório, papelaria e informática."
+        },
+        {
+            "nome": "Tintas MC",
+            "endereco": "Rua Schilling, 330 - Vila Leopoldina, São Paulo - SP",
+            "telefone": "(11) 3647-9423",
+            "url": "https://www.tintasmc.com.br/",
+            "imagem": "imagens/tintas-mc.png",
+            "nivel": 2,
+            "segmento": "Comércio de tintas",
+            "descricao": "Comércio especializado em tintas e produtos para pintura."
+        },
+        {
+            "nome": "Prisma Pneus",
+            "endereco": "Rua Guaicurus, 350 - Lapa, São Paulo - SP",
+            "telefone": "0800 591 5235",
+            "url": "https://prismapneus.com.br/",
+            "imagem": "imagens/prisma-pneu.png",
+            "nivel": 1,
+            "segmento": "Setor automotivo",
+            "descricao": "Comércio de pneus e prestação de serviços automotivos."
+        }
+    ]
+}
