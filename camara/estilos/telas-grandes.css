@@ -1,7 +1,61 @@
-@media (min-width: 61.24rem) {
+@media (min-width: 936px) {
+
+
+    header img {
+        width: 150px;
+        height: auto;
+    }
+
+    .marca {
+        align-items: end;
+        margin-bottom: 1rem;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
 
     .hamburguer {
         display: none;
     }
+
+    nav {
+        flex-basis: auto;
+    }
+
+    nav ul,
+    nav ul.show {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        padding: 0 4rem 0 0;
+    }
+
+    nav a {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    #cartoes {
+        gap: 2rem;
+        margin: 3rem auto;
+
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1rem;
+    }
+
+    .data {
+        justify-self: end;
+    }
+
+
+    .icone {
+        width: 50px;
+        height: 50px;
+    }
+
 
 }

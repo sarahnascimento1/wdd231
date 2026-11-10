@@ -4,6 +4,15 @@ ano.textContent = new Date().getFullYear();
 
 document.getElementById("ultimaModificacao").innerHTML = document.lastModified;
 
+const navbtn = document.querySelector("#ham-btn");
+const menu = document.querySelector("nav ul");
+
+navbtn.addEventListener('click', () => {
+    navbtn.classList.toggle('show');
+    menu.classList.toggle('show');
+});
+
+
 const cartoes = document.querySelector('#cartoes');
 const niveis = { 1: 'Membro', 2: 'Prata', 3: 'Ouro' };
 
