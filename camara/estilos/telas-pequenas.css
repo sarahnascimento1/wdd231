@@ -160,6 +160,7 @@ section img {
 
     width: 90px;
     height: auto;
+
     border: 1px solid #ac4a00;
 
 }
@@ -225,3 +226,50 @@ footer {
     font-size: 0.9rem;
 }
 
+.visualizacao {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1.5rem 1rem 0;
+}
+
+.visualizacao button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #ac4a00;
+    border-radius: 90px;
+    background-color: #f8f0af;
+    color: #002930;
+    cursor: pointer;
+}
+
+.visualizacao button:hover {
+    background-color: #bda01f;
+}
+
+.visualizacao button.ativo {
+    background-color: #ac4a00;
+    color: #fff;
+}
+
+#cartoes.lista {
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#cartoes.lista section {
+    width: 100%;
+    max-width: 700px;
+}
+
+#cartoes.lista section img {
+    display: none;
+    
+}
+
+#cartoes.lista section {
+    grid-template-columns: 1fr;
+   
+}

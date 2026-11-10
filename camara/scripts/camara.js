@@ -16,6 +16,28 @@ navbtn.addEventListener('click', () => {
 const cartoes = document.querySelector('#cartoes');
 const niveis = { 1: 'Membro', 2: 'Prata', 3: 'Ouro' };
 
+const btnGrade = document.querySelector('#btn-grade');
+const btnLista = document.querySelector('#btn-lista');
+
+function mudarVisualizacao(modo) {
+    const ehLista = modo === 'lista';
+
+    cartoes.classList.toggle('lista', ehLista);
+    cartoes.classList.toggle('grade', !ehLista);
+
+    btnLista.classList.toggle('ativo', ehLista);
+    btnGrade.classList.toggle('ativo', !ehLista);
+
+    btnLista.setAttribute('aria-pressed', ehLista);
+    btnGrade.setAttribute('aria-pressed', !ehLista);
+}
+
+btnGrade.addEventListener('click', () => mudarVisualizacao('grade'));
+btnLista.addEventListener('click', () => mudarVisualizacao('lista'));
+
+const salvo = localStorage.getItem('visualizacao');
+if (salvo) mudarVisualizacao(salvo);
+
 const exibirEmpresas = (empresas) => {
     empresas.forEach((empresa) => {
 
