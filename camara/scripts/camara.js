@@ -138,7 +138,7 @@ if (tresEmpresas) {
 // clima:
 
 const tempAtual = document.querySelector('#temperatura');
-const iconeDoClima = document.querySelector('#imagem');
+const figura = document.querySelector('#figura-clima');
 const descrDaLegenda = document.querySelector('figcaption');
 const lugar = document.querySelector('#local');
 
@@ -174,9 +174,11 @@ function exibirResultados(dados) {
     nascer.innerHTML = new Date(dados.sys.sunrise * 1000).toLocaleTimeString('pt-BR', opcoes);
     porDoSol.innerHTML = new Date(dados.sys.sunset * 1000).toLocaleTimeString('pt-BR', opcoes);
 
-    const iconsrc = `https://api.openweathermap.org/img/w/${dados.weather[0].icon}.png`;
-    iconeDoClima.setAttribute('src', iconsrc);
-    iconeDoClima.setAttribute('alt', dados.weather[0].description);
+    const imagem = document.createElement('img');
+
+    imagem.src = `https://api.openweathermap.org/img/w/${dados.weather[0].icon}.png`;
+    imagem.alt = `Condição do clima: ${dados.weather[0].description}`;
+    figura.prepend(imagem);
 }
 
 const url = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${chave}&units=metric&lang=${lang}`
