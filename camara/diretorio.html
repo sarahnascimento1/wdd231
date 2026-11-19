@@ -39,7 +39,7 @@
 <body>
     <header>
         <div class="marca">
-            <img src="imagens/icone-2.png" alt="icone">
+            <img src="imagens/icone-2.webp" alt="icone">
             <div class="nome">
                 <span class="titulo">WC</span> 
                 <span class="subtitulo">Work Câmara de Comércio</span>
@@ -47,14 +47,15 @@
             
         </div>
         
-        <button id="ham-btn" class="hamburguer"></button>
+        <button id="ham-btn" class="hamburguer" aria-label="Abrir menu" aria-expanded="false"
+        aria-controls="menu-principal"></button>
 
         <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Diretório</a></li>
-                <li><a href="#">Associar-se</a></li>
-                <li><a href="#">Descobrir</a></li>
+            <ul id="menu-principal">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="diretorio.html" aria-current="page">Diretório</a></li>
+                <li><a href="associar.html">Associar-se</a></li>
+                <li><a href="descobrir.html">Descobrir</a></li>
             </ul>
         </nav>
     </header>

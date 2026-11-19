@@ -7,6 +7,7 @@
 
 body {
     font-family: "Raleway", sans-serif;
+    background-color: aliceblue;
 }
 
 
@@ -74,9 +75,11 @@ nav a {
     color: #fff;
 }
 
-nav a:hover {
+nav a:hover, nav a[aria-current="page"] {
     background-color: #bda01f;
+    color: #002930;
 }
+
 
 
 .hamburguer {
@@ -94,17 +97,18 @@ nav a:hover {
 .hamburguer::after {
     content: "\2630";
     font-size: 2rem;
-    
+
 }
 
 .hamburguer.show::after {
     content: "\00D7";
-    
+
 }
 
 .hamburguer:hover::after {
     color: #ac4a00;
 }
+
 
 main h1 {
     text-align: center;
@@ -112,6 +116,197 @@ main h1 {
     color: #002930;
     margin: 2rem 1rem 0;
 }
+
+
+/* página inicial camara: */
+
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: 50vh;
+    min-height: 280px;
+    display: block;
+    object-fit: cover;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / 0.45);
+}
+
+.hero p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.hero-conteudo {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    
+
+}
+
+.associar {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    padding: 0.8rem 1.6rem;
+    border: 1px solid #f8f0af;
+    border-radius: 90px;
+    color: #fff;
+    background-color: #ac4a00;
+    cursor: pointer;
+}
+
+.blocos, .tres-empresas {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.evento,
+.tempo,
+.previsao {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 0;
+    border: 2px solid #ac4a00;
+    margin: 0rem;
+    background-color: #f8f0af;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+
+
+
+}
+
+.evento p,
+.detalhes,
+.informacao {
+    padding: 1rem;
+    font-weight: 500;
+
+
+}
+
+.titulo-evento,
+.clima,
+.prevision {
+    border-bottom: 2px solid #ac4a00;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1.4rem;
+    align-self: stretch;
+    background-color: #002930;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+
+
+}
+
+.titulo-evento+p {
+    margin-top: 1rem;
+}
+
+
+.graus {
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding-left: 1rem;
+}
+
+.painel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 0.5rem 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+h2 {
+    padding: 1rem;
+}
+
+.lista {
+    padding: 1rem;
+
+}
+
+
+
+.cartao-destaque {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    background-color: #f8f0af;
+    border: 2px solid #ac4a00;
+    border-radius: 20px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 auto;
+    min-width: 0;
+
+}
+
+.cartao-destaque img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border: 1px solid #ac4a00;
+    background-color: #fff;
+}
+
+.contato-destaque {
+    min-width: 0;
+}
+
+
+.contato-destaque h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.contato-destaque p {
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.contato-destaque a {
+    overflow-wrap: anywhere;
+}
+
 
 .nome,
 .projeto {
@@ -135,7 +330,7 @@ main h1 {
 
 }
 
-section {
+.section-empresas {
     display: grid;
     grid-template-columns: 90px 1fr;
     column-gap: 1rem;
@@ -153,7 +348,7 @@ section {
 }
 
 
-section h2 {
+.section-empresas h2 {
     grid-column: 1 / -1;
     text-align: center;
     font-size: 1.1rem;
@@ -163,7 +358,7 @@ section h2 {
 }
 
 
-section img {
+.section-empresas img {
 
     width: 90px;
     height: auto;
@@ -251,7 +446,8 @@ footer {
     cursor: pointer;
 }
 
-.visualizacao button:hover {
+.visualizacao button:hover,
+.associar:hover {
     background-color: #bda01f;
 }
 
@@ -266,14 +462,33 @@ footer {
 
 }
 
-#cartoes.lista section {
+#cartoes.lista .section-empresas {
     grid-template-columns: 1fr;
     width: 100%;
     max-width: 700px;
 }
 
-#cartoes.lista section img {
+#cartoes.lista .section-empresas img {
     display: none;
 
 }
 
+#lista-previsao li {
+    display: flex;
+    align-items: center;
+    gap: 0.60rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+#lista-previsao strong {
+    min-width: 5.5rem;
+    text-transform: capitalize;
+    
+}
+
+#lista-previsao img {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
