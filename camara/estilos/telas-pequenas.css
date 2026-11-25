@@ -22,9 +22,19 @@ header {
     flex-wrap: wrap;
 }
 
+#local {
+    color: #0a2429;
+}
+
 nav {
     flex-basis: 100%;
 }
+
+nav li+li {
+    border-top: 1px solid rgb(248 240 175 / 0.2);
+}
+
+
 
 .marca {
     display: flex;
@@ -56,23 +66,28 @@ nav ul {
 nav ul.show {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 0.75rem;
     padding: 1rem;
     width: 100%;
+    background-color: #00363f;
+    border-top: 2px solid #ac4a00;
+    
 
 }
 
 nav a {
     display: block;
-    text-decoration: none;
-    border: 1px solid #f8f0af;
-    padding: 0.7rem 1rem;
-    font-size: 0.9rem;
-    border-radius: 90px;
-    background-color: #ac4a00;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
     font-weight: 600;
-    color: #fff;
+    color: #f8f0af;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-left: 5px solid transparent;
+    text-align: left;
+    transition: background-color 0.2s, border-color 0.2s;
 }
 
 nav a:hover, nav a[aria-current="page"] {
@@ -102,6 +117,7 @@ nav a:hover, nav a[aria-current="page"] {
 
 .hamburguer.show::after {
     content: "\00D7";
+    font-size: 3.5rem;
 
 }
 
@@ -256,16 +272,10 @@ ul {
     text-align: center;
 }
 
-
-h2 {
-    padding: 1rem;
-}
-
 .lista {
     padding: 1rem;
 
 }
-
 
 
 .cartao-destaque {
@@ -628,9 +638,6 @@ input[type="radio"] {
    
 }
 
-.layout {
-    margin-top: -3rem;
-}
 
 h2 {
     text-align: center;

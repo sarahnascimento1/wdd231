@@ -40,12 +40,28 @@
         flex-direction: row;
         gap: 1.5rem;
         padding: 0 4rem 0 0;
+        border: none;
+        background-color: transparent;
     }
 
     nav a {
+
+        border: 1px solid #f8f0af;
+        padding: 0.7rem 1rem;
+        font-size: 0.9rem;
+        border-radius: 90px;
+        background-color: #ac4a00;
+        font-weight: 600;
+        color: #fff;
         padding: 0.8rem;
         font-size: 1rem;
+        
     }
+
+    nav li+li {
+        border-top: none;
+    }
+        
 
     #cartoes {
         gap: 2rem;
@@ -84,8 +100,10 @@
     margin-right: 5rem;
     align-items: start;
 
-
     }
 
+    .layout {
+        margin-top: -3rem;
+    }
 
 }

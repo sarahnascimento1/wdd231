@@ -24,3 +24,21 @@ document.querySelectorAll(".nivel").forEach(card => {
 
 
 });
+
+const navbtn = document.querySelector("#ham-btn");
+const menu = document.querySelector("#menu-principal");
+
+if (navbtn && menu) {
+    navbtn.addEventListener('click', () => {
+        navbtn.classList.toggle('show');
+        menu.classList.toggle('show');
+
+        const aberto = navbtn.classList.contains('show');
+
+        navbtn.setAttribute('aria-expanded', aberto);
+        navbtn.setAttribute(
+            'aria-label',
+            aberto ? 'Fechar menu' : 'Abrir menu'
+        );
+    });
+}
