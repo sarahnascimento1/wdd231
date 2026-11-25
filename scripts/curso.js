@@ -84,6 +84,7 @@ const cursos = [
 const listaCursos = document.querySelector('#lista-cursos');
 const botoesFiltro = document.querySelectorAll('.filtros button');
 const totalCreditos = document.querySelector('#total-creditos');
+const infosDoCurso = document.querySelector('#infos-do-curso');
 
 function exibirCursos(lista) {
     listaCursos.innerHTML = '';
@@ -97,12 +98,13 @@ function exibirCursos(lista) {
             item.classList.add('concluido');
         }
 
+        item.addEventListener('click', () => exibirDetalhes(curso));
+
         listaCursos.appendChild(item);
     });
 
     const total = lista.reduce((soma, curso) => soma + curso.creditos, 0);
     totalCreditos.textContent = `Total de créditos dos cursos exibidos: ${total}`;
-
 }
 
 botoesFiltro.forEach(botao => {
@@ -117,3 +119,21 @@ botoesFiltro.forEach(botao => {
     });
 });
 
+function exibirDetalhes(curso) {
+    infosDoCurso.innerHTML = `
+        <button id="fechar-modal" aria-label="Fechar">❌</button>
+        <h2>${curso.assunto} ${curso.numero}</h2>
+        <h3>${curso.titulo}</h3>
+        <p><strong>Créditos:</strong> ${curso.creditos}</p>
+        <p><strong>Certificado:</strong> ${curso.certificado}</p>
+        <p>${curso.descricao}</p>
+        <p><strong>Tecnologias:</strong> ${curso.tecnologia.join(', ')}</p>`;
+
+    infosDoCurso.showModal();
+
+    document.querySelector('#fechar-modal').addEventListener('click', () => {
+        infosDoCurso.close();
+    });
+}
+
+exibirCursos(cursos);

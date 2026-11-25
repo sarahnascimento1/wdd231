@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="estilos/telas-pequenas.css">
     <link rel="stylesheet" href="estilos/telas-grandes.css">
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/camara.js" defer></script>
+    <script src="scripts/agradecimento.js" defer></script>
 
     <!-- fonts -->
 
@@ -49,13 +49,13 @@
         </div>
 
         <button id="ham-btn" class="hamburguer" aria-label="Abrir menu" aria-expanded="false"
-        aria-controls="menu-principal"></button>
+            aria-controls="menu-principal"></button>
 
         <nav>
             <ul id="menu-principal">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="diretorio.html">Diretório</a></li>
-                <li><a href="associar.html" aria-current="page">Associar-se</a></li>
+                <li><a href="associacao.html" aria-current="page">Associar-se</a></li>
                 <li><a href="descobrir.html">Descobrir</a></li>
             </ul>
         </nav>
@@ -64,7 +64,33 @@
 
     <main>
 
-       <h1>Página em construção...</h1>
+        <h1 class="titulo-form">Obrigado por se associar!</h1>
+        
+        <section class="resumo">
+            <p class="confirmacao">Recebemos a sua solicitação. Confira os dados enviados:</p>
+        
+            <dl class="dados">
+                <dt>Nome</dt>
+                <dd id="res-nome"></dd>
+        
+                <dt>Sobrenome</dt>
+                <dd id="res-sobrenome"></dd>
+        
+                <dt>E-mail</dt>
+                <dd id="res-email"></dd>
+        
+                <dt>Celular</dt>
+                <dd id="res-celular"></dd>
+        
+                <dt>Empresa</dt>
+                <dd id="res-empresa"></dd>
+        
+                <dt>Data e hora</dt>
+                <dd id="res-timestamp"></dd>
+            </dl>
+        
+            <a href="index.html" class="associar">Voltar ao início</a>
+        </section>
 
     </main>
     <footer>
