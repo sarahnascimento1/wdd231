@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+header {
+    background-color: #0fbab7;
+    font-family: "Mulish", sans-serif;
+    color: #000c0c;
+    padding: 2rem;
+    text-align: center;
+    
+}
+
+div {
+    padding: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+
+}
+
+h2 {
+    font-family: "Mulish", sans-serif;
+    padding: 1rem;
+    background-color: #f1d989;
+    margin-bottom: 2rem;
+}
+
+.nome, .finalidade, .cenario, .cores, .tipografia {
+    border: 2px solid #3e3932;
+    margin: 2rem;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+p {
+    padding: 1rem;
+}
+
+
+p, .cor1,
+.cor2,
+.cor3 {
+    font-family: "Roboto", sans-serif;
+    
+}
+
+.fonte1 {
+    font-family: "Roboto", sans-serif;
+
+}
+
+.fonte2 {
+    font-family: "Mulish", sans-serif;
+}
+
+.cor1, .cor2, .cor3 {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #0003;
+    border-radius: 3px;
+    vertical-align: -0.15em;
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+
+
+
+
